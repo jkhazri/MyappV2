@@ -1,2 +1,14 @@
 ---
 # tasks file for docker-registry
+- name: Log into DockerHub
+  docker_login:
+    username: jkdocker01
+    password: jkdocker01
+    email: jaberlearn@gmail.com
+- name: Push to docker hub
+  ansible.builtin.shell: docker push jkdocker01/myappV
+#- name: Push to docker hub
+#  docker_image:
+#    name: "haifa54/myapp"
+#    repository: haifa54/myapp
+#    push: yes
