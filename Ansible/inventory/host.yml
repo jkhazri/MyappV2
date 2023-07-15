@@ -5,5 +5,5 @@ localhost
 
 [Server:vars]
 ansible_python_interpreter= /usr/bin/python3
-ansi_user= gomycode
+ansi_user= root
 ansible_become_pass=besthaf
